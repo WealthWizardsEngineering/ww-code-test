@@ -1,4 +1,5 @@
-import React from 'react';
+/** @jsx jsx */
+import { jsx } from '@emotion/react';
 import ReactDOM from 'react-dom';
 import { createBrowserHistory } from 'history';
 import configureStore from './store/configure-store';

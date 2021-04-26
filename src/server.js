@@ -12,13 +12,13 @@ const app = express();
 
 app.engine('html', handlebars({
   helpers: {
-    toJson: object => JSON.stringify(object),
+    toJson: (object) => JSON.stringify(object),
   },
 }));
 app.set('view engine', 'html');
 
 app.use(responseTime());
-app.use(helmet());
+app.use(helmet({ contentSecurityPolicy: false }));
 app.use(nocache());
 app.use(cors());
 app.use(bodyParser.urlencoded({

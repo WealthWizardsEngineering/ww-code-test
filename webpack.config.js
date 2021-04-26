@@ -16,14 +16,14 @@ module.exports = () => {
     },
     entry: {
       app: [
-        'babel-polyfill',
-        path.join(__dirname, 'src/app/index.js'),
+        '@babel/polyfill',
+        path.join(__dirname, 'src/app/index.jsx'),
       ],
     },
     output: {
       path: path.join(__dirname, '/dist/'),
       filename: 'assets/[name].[hash].js',
-      publicPath: `/`,
+      publicPath: '/',
     },
     plugins: [
       new webpack.DefinePlugin({

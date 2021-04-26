@@ -6,7 +6,7 @@ const RD = {};
 RD.ZERO = new Decimal(0);
 
 RD.decimal = R.curry(
-  x => new Decimal(x),
+  (x) => new Decimal(x),
 );
 
 RD.lt = R.curry(
