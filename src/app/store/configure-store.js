@@ -17,6 +17,7 @@ export default (history, initialState = {}) => {
     middleware = [...middleware, logger];
   }
 
+  // eslint-disable-next-line no-mixed-operators
   const composeEnhancers = process.env.NODE_ENV !== 'production' && typeof window !== 'undefined' && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
   const store = createStore(

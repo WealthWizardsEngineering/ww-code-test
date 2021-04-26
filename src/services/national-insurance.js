@@ -9,7 +9,7 @@ const isDateOnOrAfter = R.curry(
     .isSameOrBefore(date),
 );
 
-const noBandsError = date => new Error(`National Insurance bands unavailable for date ${date}`);
+const noBandsError = (date) => new Error(`National Insurance bands unavailable for date ${date}`);
 
 const bandsOnDate = (date) => {
   const month = moment.utc(date, 'YYYY-MM-DD');
