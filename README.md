@@ -2,15 +2,14 @@
 
 In this test you will find a wide cross section of the type of code you will be exposed to at Wealth Wizards.
 
-For an experienced engineer this code test should take ~1 hour to complete. For more junior candidates we 
-would suggest you attempt as much of the test as you can in a 2 hour time limit and submit your progress, however if 
-you should wish to continue beyond that we welcome you to do so.
+Most candidates complete the test in under 2 hours, however if 
+you should wish to continue beyond that we welcome you to do so and this will have no impact on your submission.
  
 ## Instructions
 
 Click the **Use this template** button above to create a private repository in your own github account and invite github users [@mrwithersea](https://github.com/mrwithersea) and [@rob1256](https://github.com/rob1256) as collaborators on your repo.
  
-**IMPORTANT: Please commit your work on a new branch and raise a pull request against the master branch of your repo and add us as reviewers. Please add a simple description to your PR outlining which parts of the test have been completed and any comments you feel necessary.**
+**IMPORTANT: Please commit your work on a new branch and raise a pull request against the master branch of your repo and add us as reviewers. Please add a simple description to your PR outlining which parts of the test have been completed and any comments you feel support your submission.**
 
 Start the app by running the following commands:
  
