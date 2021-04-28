@@ -78,4 +78,7 @@ When running on Windows 10 our preference was to follow [this guide](https://www
 
 Users of Ubuntu should be aware that in some versions of the distro there are extra hurdles around the aliasing of the `yarn` command by the `cmdtest` library and the use of `nodejs` rather than `node`, [this page](https://yarnpkg.com/lang/en/docs/install/#debian-stable) provides details on rectifying these problems.
 
-This code test requires Node.js 10.x (which is in LTS) and we advocate using a node version management tool such as [n](https://github.com/tj/n) to help in managing your node versions.
+This code test requires Node.js 14.x (which is in LTS) and we advocate using a node version management tool such as [n](https://github.com/tj/n) to help in managing your node versions.
+
+If you're using VS Code, have the [Remote - Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) VS Code extensions and Docker installed the project can be opened in a container.
+More information about developing in a container can be found in the [VS Code documentation](https://code.visualstudio.com/docs/remote/containers#_quick-start-open-an-existing-folder-in-a-container)
