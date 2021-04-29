@@ -70,15 +70,21 @@ Good luck
 
 ---
 
-#### _Caveats_
+### Caveats
 
-This code test was written on macOS but will run natively on Windows 10.
+This code test was written on macOS but will run natively on Linux and Windows 10 as well as in the provided devcontainer. The code test requires Node.js 14.x (which is in LTS) and we advocate using a node version management tool such as [n](https://github.com/tj/n) to help in managing your node versions.
+
+**Windows Users**
 
 When running on Windows 10 our preference was to follow [this guide](https://www.windowscentral.com/how-install-bash-shell-command-line-windows-10) to using Windows Subsystem for Linux and installing Bash through the Ubuntu distro in the Windows Store.
 
+**Linux Users**
+
 Users of Ubuntu should be aware that in some versions of the distro there are extra hurdles around the aliasing of the `yarn` command by the `cmdtest` library and the use of `nodejs` rather than `node`, [this page](https://yarnpkg.com/lang/en/docs/install/#debian-stable) provides details on rectifying these problems.
 
-This code test requires Node.js 14.x (which is in LTS) and we advocate using a node version management tool such as [n](https://github.com/tj/n) to help in managing your node versions.
+**Remote Containers**
 
-If you're using VS Code, have the [Remote - Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) VS Code extensions and Docker installed the project can be opened in a container.
+If you're using VS Code, have the [Remote - Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) VS Code extensions and Docker installed the project can be opened in a remote container.
 More information about developing in a container can be found in the [VS Code documentation](https://code.visualstudio.com/docs/remote/containers#_quick-start-open-an-existing-folder-in-a-container)
+
+If you would like to attempt the test in your browser and are part of the beta this project is also configured to run in github [Codespaces](https://github.com/features/codespaces). Please be aware github may charge for use of this service.
