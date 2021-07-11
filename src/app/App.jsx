@@ -2,16 +2,18 @@
 import { css, jsx } from '@emotion/react';
 import PropTypes from 'prop-types';
 import { Provider } from 'react-redux';
+import FormInput from './component/form-input';
 
 const App = ({ store }) => (
   <Provider store={store}>
-    <p
-      css={css`
-        font-size: 100px;
-      `}
+    <div css={css`
+      padding-left: 50px;
+      padding-top: 50px;
+    `}
     >
-      Your app here
-    </p>
+      <h1>National Insurance calculator</h1>
+      <FormInput FormInput />
+    </div>
   </Provider>
 );
 
