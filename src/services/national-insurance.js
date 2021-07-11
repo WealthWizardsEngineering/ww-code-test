@@ -6,16 +6,11 @@ const allBands = require('../config/ni');
 
 const isDateOnOrAfter = R.curry(
   (date, dateString) => moment.utc(dateString, 'YYYY-MM-DD')
-    .isSameOrBefore(date), // this might be fishy
+    .isSameOrBefore(date),
 );
 
 const noBandsError = (date) => new Error(`National Insurance bands unavailable for date ${date}`);
 
-// Takes date,
-// Filters ni config for dates on or after startDate
-// Gets last element of list
-// Gets 'bands' - array of objects
-// throws error is no values for bands
 const bandsOnDate = (date) => {
   const month = moment.utc(date, 'YYYY-MM-DD');
 
@@ -49,13 +44,6 @@ const calcForBand = R.curry(
 
 module.exports = (runDate) => {
   const bands = bandsOnDate(runDate || moment.utc());
-  // console.log('bands', bands);
-
-  // Output before sum
-  // console.log(R.compose(
-  //   R.flip(R.map)(bands),
-  //   calcForBand,
-  // )(700));
 
   return R.compose(
     RD.sum,
@@ -63,11 +51,6 @@ module.exports = (runDate) => {
     calcForBand,
   );
 };
-
-// bandsOnDate() // gets ni bands for
-// R.flip() reverses the ordering of first two args,
-// R.map() takes a function and applies this function to each of the functor values and returns the functor in the same shape
-// R.compose() right to left function composition (will run right most function first, then feed the output to the next left function)
 
 // for unit tests
 module.exports.bandsOnDate = bandsOnDate;
