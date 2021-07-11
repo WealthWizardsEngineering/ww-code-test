@@ -4,7 +4,6 @@ const RD = require('../utils/ramda-decimal');
 
 const allBands = require('../config/ni');
 
-//
 const isDateOnOrAfter = R.curry(
   (date, dateString) => moment.utc(dateString, 'YYYY-MM-DD')
     .isSameOrBefore(date), // this might be fishy
@@ -48,17 +47,15 @@ const calcForBand = R.curry(
   ),
 );
 
-// bandsOnDate() // gets ni bands for given date or NOW
-// calcForBand function
 module.exports = (runDate) => {
   const bands = bandsOnDate(runDate || moment.utc());
-  console.log('bands', bands);
+  // console.log('bands', bands);
 
   // Output before sum
-  console.log(R.compose(
-    R.flip(R.map)(bands),
-    calcForBand,
-  )(700));
+  // console.log(R.compose(
+  //   R.flip(R.map)(bands),
+  //   calcForBand,
+  // )(700));
 
   return R.compose(
     RD.sum,
