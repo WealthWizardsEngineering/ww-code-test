@@ -12,7 +12,7 @@ Good luck
 ## Instructions
 
 - [ ] Click **[Use this template](https://github.com/WealthWizardsEngineering/ww-code-test/generate)** to create a private repository in your own github account
-- [ ] Invite github users [@mrwithersea](https://github.com/mrwithersea), [@lukebrowne](https://github.com/lukebrowne), [@ukslim](https://github.com/ukslim) and [@laurence-howard](https://github.com/laurence-howard) as collaborators on your repo
+- [ ] Invite github users [@mrwithersea](https://github.com/mrwithersea), [@lukebrowne](https://github.com/lukebrowne), [@codafett](https://github.com/codafett), [@ukslim](https://github.com/ukslim) and [@laurence-howard](https://github.com/laurence-howard) as collaborators on your repo
 - [ ] Run ```yarn``` to install packages
 - [ ] **Commit all your work on a new branch**
 - [ ] When you are ready **raise a pull request against the master branch of your repo and add us as reviewers**
