@@ -2,8 +2,12 @@
 
 In this test you will find a wide cross section of the type of code you will be exposed to at Wealth Wizards.
 
-Most candidates complete the test in under 2 hours, however if 
-you should wish to continue beyond that we welcome you to do so and this will have no impact on your submission.
+There is no time limit to this test, so feel free to take as little or
+as long as you need to complete each section.\
+If you don't have enough free time to complete every section, instead you can let us know what
+you would improve on if you had more time.
+
+If you have any questions or want more information, please do send us a message.
 
 Good luck
  
