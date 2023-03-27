@@ -10,14 +10,14 @@ you would improve on if you had more time.
 If you have any questions or want more information, please do send us a message.
 
 Good luck
- 
+
 ---
 
 ## Instructions
 
 - [ ] Click **[Use this template](https://github.com/WealthWizardsEngineering/ww-code-test/generate)** to create a private repository in your own github account
-- [ ] Invite github users [@lukebrowne](https://github.com/lukebrowne), [@ukslim](https://github.com/ukslim), [@cpettifer](https://github.com/cpettifer), [@ScottEnock](https://github.com/ScottEnock), and [@markjdvs](https://github.com/markjdvs) as collaborators on your repo
-- [ ] Run ```yarn``` to install packages
+- [ ] Invite github users [@lukebrowne](https://github.com/lukebrowne), [@ukslim](https://github.com/ukslim), [@cpettifer](https://github.com/cpettifer), [@ScottEnock](https://github.com/ScottEnock), [@martinpllu](https://github.com/martinpllu), and [@markjdvs](https://github.com/markjdvs) as collaborators on your repo
+- [ ] Run `yarn` to install packages
 - [ ] **Commit all your work on a new branch**
 - [ ] When you are ready **raise a pull request against the master branch of your repo and add us as reviewers**
 - [ ] Add a simple description to your PR outlining which parts of the test have been completed and any comments you feel support your submission
@@ -62,7 +62,7 @@ make dev
 There are a number of packages pre-installed with this codebase, feel free to _use any you see fit_ or add any of your own choosing.
 
 The placeholder application can be browsed to on:
- 
+
 ```
 http://localhost:8080
 ```
@@ -77,7 +77,7 @@ curl -X POST http://localhost:8080/v1/national-insurance -H 'Content-Type: appli
 
 ### _Additional Information_
 
-This code test was written on macOS but will run natively on Linux and Windows 10 as well as in the provided devcontainer. The code test requires Node.js 14.x (which is in LTS) and we advocate using a node version management tool such as [n](https://github.com/tj/n) to help in managing your node versions.
+This code test was written on macOS but will run natively on Linux and Windows 10 as well as in the provided devcontainer. The code test requires Node.js 18.x (which is in LTS) and we advocate using a node version management tool such as [n](https://github.com/tj/n) to help in managing your node versions.
 
 **Windows Users**
 
