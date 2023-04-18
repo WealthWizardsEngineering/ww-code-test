@@ -40,7 +40,10 @@ module.exports = () => {
           callback();
         });
       },
-      new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
+      new webpack.IgnorePlugin({
+        resourceRegExp: /^\.\/locale$/,
+        contextRegExp: /moment/,
+      }),
     ],
     module: {
       rules: [
