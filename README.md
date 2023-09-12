@@ -23,6 +23,10 @@ Good luck
 - [ ] Add a simple description to your PR outlining which parts of the test have been completed and any comments you feel support your submission
 - [ ] If it is unlikely we will be able to identify you from your github username please add your name/email to your PR so we know who you are
 
+Once you've submitted your pull request we'll aim to give feedback on your submission as soon as possible (usually within a few working days).
+
+**You're not expected to address any of this feedback**, and we won't be able to review any further submissions.
+
 ---
 
 ### Part A. Fix the unit tests that are broken
