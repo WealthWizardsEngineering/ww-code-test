@@ -1,8 +1,7 @@
 const R = require('ramda');
 const moment = require('moment');
+const getAllBands = require('../config/get-config');
 const RD = require('../utils/ramda-decimal');
-
-const allBands = require('../config/ni');
 
 const isDateOnOrAfter = R.curry(
   (date, dateString) => moment.utc(dateString, 'YYYY-MM-DD')
@@ -11,7 +10,7 @@ const isDateOnOrAfter = R.curry(
 
 const noBandsError = (date) => new Error(`National Insurance bands unavailable for date ${date}`);
 
-const bandsOnDate = (date) => {
+const bandsOnDate = (date, bands) => {
   const month = moment.utc(date, 'YYYY-MM-DD');
 
   return R.compose(
@@ -21,7 +20,7 @@ const bandsOnDate = (date) => {
     R.prop('bands'),
     R.last,
     R.filter(R.propSatisfies(isDateOnOrAfter(month), 'startDate')),
-  )(allBands);
+  )(bands);
 };
 
 // TODO this should do more than return the number it's given
@@ -35,7 +34,8 @@ const calcForBand = R.curry(
 );
 
 module.exports = (runDate) => {
-  const bands = bandsOnDate(runDate || moment.utc());
+  const allBands = getAllBands();
+  const bands = bandsOnDate(runDate || moment.utc(), allBands);
   return R.compose(
     RD.sum,
     R.flip(R.map)(bands),
